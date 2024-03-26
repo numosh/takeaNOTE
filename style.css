@@ -1,0 +1,58 @@
+body, input, button, a {
+    font-family: 'Helvetica Neue', Helvetica, Barlow, sans-serif;
+}
+
+.underline-input, button, #keynotesContainer input {
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding: 8px;
+    display: block; /* Untuk membuat input menurun ke bawah */
+    width: calc(100% - 20px); /* Sesuaikan lebar input dengan padding */
+}
+
+button {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#notesDisplay .note {
+    border: 3px solid #007BFF; /* Garis tebal berwarna di sisi kiri */
+    border-left-width: 10px;
+    border-radius: 8px; /* Sudut yang sedikit melengkung */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.note-title {
+    font-size: 140%; /* Perbesar 10% dari ukuran normal */
+    font-weight: bold;
+    text-transform: uppercase; /* Ubah teks menjadi kapital */
+}
+
+.note-key {
+    font-size: 103%; /* Perbesar 3% dari ukuran normal */
+    padding-left: 5px;
+    border-left: 2px solid black;
+    display: block; /* Membuat keynote dan link tampil di baris baru */
+    margin-top: 5px;
+}
+
+.note-link {
+    font-size: 0.9em; /* Penyesuaian ukuran font */
+    display: block;
+    padding-left: 20px; /* Menyesuaikan padding agar sejajar dengan huruf pertama keynote */
+    margin-top: 3px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Tambahkan padding pada mobile */
+    }
+
+    .underline-input, button, #keynotesContainer input {
+        width: calc(100% - 36px); /* Sesuaikan untuk mobile */
+    }
+}
